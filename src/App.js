@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AnalogClock from './Components/AnalogClock/AnalogClock.jsx';
+// import Container from './Components/Container/Container.jsx'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AnalogClock title="London" dateDiff={-3}/>
+      <AnalogClock title="Tokyo" dateDiff={5}/>
+      <AnalogClock title="New York" dateDiff={-8}/>
     </div>
   );
 }

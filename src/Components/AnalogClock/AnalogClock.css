@@ -1,0 +1,46 @@
+.analog-clock {
+    width: 200px;
+    height: 200px;
+    border: solid 1px #000;
+    border-radius: 50%;
+    position: relative;
+    background: #fff;
+    margin: 20px;
+}
+
+.analog-clock .dial {
+    position: absolute;
+    left: 49%;
+    width: 50px;
+    height: 100px;
+    transform-origin: bottom left;
+}
+
+.analog-clock .seconds {
+    border-left: solid 1px #cc0000;    
+}
+
+.analog-clock .minutes {
+    border-left: solid 1px #000;
+}
+
+.analog-clock .hours {
+    width: 2px;
+    height: 70px;
+    top: 30px;
+    border-left: solid 2px #000;
+
+}
+
+.analog-clock .numerals {
+
+}
+
+.analog-clock .clock-info {
+    display: flex;
+    justify-content: center;
+}
+
+.analog-clock .timezone {
+    font-size: 1.2em;
+}
